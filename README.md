@@ -29,7 +29,7 @@ The "visualcube" folder contains the master images in [SVG](https://en.wikipedia
 * **master-black.svg** - The black silhouette was used during testing
 * **master-white.svg** - The white silhouette is used for the Microsoft tiles
 
-###Commands
+### Commands
 The colour image was generated online using using [VisualCube](http://cube.crider.co.uk/visualcube.php):
 
 ```bash
@@ -38,7 +38,7 @@ curl -o visualcube/master-colour.svg "http://stachu.cubing.net/v/?fmt=svg&size=7
 
 The black and white silhouettes were hand-crafted by manually tweaking the colour SVG.
 
-###References
+### References
 * Conrad Rider - [VisualCube](http://cube.crider.co.uk/visualcube.php)
 
 
@@ -60,7 +60,7 @@ e.g. Creating a 180 x 180 pixel Apple touch icon with a white background and 5% 
 convert -background white visualcube/master-colour.svg -trim -resize 162x162 -gravity center -extent 180x180 apple/apple-touch-icon.png
 ```
 
-###References
+### References
 * ImageMagick - [Trim, the 'Auto-Crop' Operator](http://www.imagemagick.org/Usage/crop/#trim)
 * ImageMagick - [Resizing Images](http://www.imagemagick.org/Usage/resize/#resize)
 * Matteo Spinelli - [Create fixed size thumbnails with ImageMagick](http://cubiq.org/create-fixed-size-thumbnails-with-imagemagick)
@@ -175,7 +175,7 @@ A theme colour can also be specified as follows:
 <meta name="theme-color" content="#387ebb">
 ```
 
-###Commands
+### Commands
 All of the Android images were generated with transparent backgrounds and filling the canvas:
 
 ```bash
@@ -192,7 +192,7 @@ convert -background transparent visualcube/master-colour.svg -trim -resize 512x5
 optipng -o7 -zm1-9 android/*.png
 ```
 
-###References
+### References
 * RealFavIconGenerator - [Android Chrome and its favicon](https://realfavicongenerator.net/blog/android-chrome-and-its-favicon/)
 * Android Developer API Guides - [Launcher Icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html)
 * Chrome Developer - [Add to Homescreen](https://developer.chrome.com/multidevice/android/installtohomescreen)
@@ -242,7 +242,7 @@ iOS 9 was released on 16/09/2015 and added the following size:
 
 Note: This package does not include dedicated images for iOS <=6 since they have been superceded by iOS 7 since 2013.
 
-###Commands
+### Commands
 All of the images were generated with a white background and a slight border:
 
 ```bash
@@ -256,7 +256,7 @@ convert -background white visualcube/master-colour.svg -trim -resize 162x162 -gr
 optipng -o7 -zm1-9 apple/*.png
 ```
 
-###References
+### References
 * Mathias Bynens - [Everything you always wanted to know about touch icons](https://mathiasbynens.be/notes/touch-icons)
 * RealFavIconGenerator - [Apple touch icon: The Good, the Bad and the Ugly](https://realfavicongenerator.net/blog/apple-touch-icon-the-good-the-bad-the-ugly)
 * Apple - [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
@@ -286,14 +286,14 @@ Modern browsers are better off with a high resolution PNG rather than the ICO so
 
 Note: 192 is a common factor of 16, 24, 32, 48, 64 and 96 so it can easily be scaled when a smaller icon is required.
 
-###Commands
+### Commands
 The classic favicon was created using [ImageMagick](https://www.imagemagick.org/):
 
 ```bash
 convert -background transparent master/svg-colour.svg -trim -resize 576x576 -gravity center -extent 576x576 -define icon:auto-resize=48,32,16 classic/favicon.ico
 ```
 
-###References
+### References
 * Mathias Bynens - [rel="shortcut icon" considered harmful](https://mathiasbynens.be/notes/rel-shortcut-icon)
 * Jonathan T. Neil - [Understand the Favicon](http://www.jonathantneal.com/blog/understand-the-favicon/)
 * MSDN - [Customizing the Site Icon](https://msdn.microsoft.com/library/gg491740(v=vs.85).aspx)
@@ -340,7 +340,7 @@ There is no need for the following in the \<head> section of the HTML as the Mic
 
 Note: My package does not include a 144x144 tile for Windows 8 + IE 10 because it has been superceded.
 
-###Commands
+### Commands
 All of the images were generated from the white silhouette and the image itself is only a small portion of the canvas:
 
 ```bash
@@ -350,7 +350,7 @@ convert -background transparent visualcube/master-white.svg -trim -resize 90x90 
 convert -background transparent visualcube/master-white.svg -trim -resize 186x186 -gravity center -extent 558x558 microsoft/mstile-310x310.png
 optipng -o7 -zm1-9 microsoft/*.png
 ```
-###References
+### References
 * Microsoft - [Creating custom tiles for IE11 websites](https://msdn.microsoft.com/library/dn455106(v=vs.85).aspx)
 * Microsoft - [Browser configuration schema reference](https://msdn.microsoft.com/library/dn320426(v=vs.85).aspx)
 * ImageMagick - [Shifting images keeping size](http://www.imagemagick.org/discourse-server/viewtopic.php?t=20823)
@@ -358,7 +358,7 @@ optipng -o7 -zm1-9 microsoft/*.png
 
 
 ## Additional Comments
-###Usage
+### Usage
 All of the files can simply be placed in the root of a website:
 
 | Platform  | Files                 | Minimum Size | Maximum Size |
@@ -378,7 +378,7 @@ The Android Chrome manifest requires a link in the \<head> section of the HTML:
 
 You can also include some additional markup for Android Chrome M31 to M38, described earlier in this document.
 
-###References
+### References
 * Favicons / Touch Icons
  * RealFaviconGenerator - [Favicon – Why you’re doing it wrong](https://realfavicongenerator.net/blog/favicon-why-youre-doing-it-wrong/)
  * RealFaviconGenerator - [FAQ](https://realfavicongenerator.net/faq)
