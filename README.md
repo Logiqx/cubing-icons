@@ -210,7 +210,7 @@ Although iOS supports an alpha channel (i.e. transarency information) it chooses
 
 There is no need to reference the icons from the HTML (e.g. apple-touch-icon) since the iOS devices will automatically retrieve the appropriate image from the root of the website. Some older browsers may attempt to download an Apple touch icon if a link exists in the HTML but this would be undesirable because of the solid white background. It is therefore preferable to avoid links in the HTML and leave iOS to automatically retrieve the appropriate image.
 
-Specific images for every resolution have been created to avoid 404 errors on the server. Default images are included ensure there is always an icon for iOS regardless of the device / version; apple-touch-icon.png and apple-touch-icon-precomposed.png
+Specific images for every resolution have been created to avoid 404 errors on the server. Default images are included to ensure there is always an icon for iOS regardless of the device / version; apple-touch-icon.png and apple-touch-icon-precomposed.png
 
 iOS 6 and earlier used the following sizes and corresponding precomposed images:
 
@@ -379,12 +379,12 @@ The Android Chrome manifest requires a link in the \<head> section of the HTML:
 You can also include some additional markup for Android Chrome M31 to M38, described earlier in this document.
 
 ### References
-* Favicons / Touch Icons
-    * RealFaviconGenerator - [Favicon – Why you’re doing it wrong](https://realfavicongenerator.net/blog/favicon-why-youre-doing-it-wrong/)
-    * RealFaviconGenerator - [FAQ](https://realfavicongenerator.net/faq)
-    * RealCSS - [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need?](https://css-tricks.com/favicon-quiz/)
-    * favicon-cheat-sheet - [Obsessive cheat sheet to favicon sizes/types](https://github.com/audreyr/favicon-cheat-sheet)
-* Web Apps
-    * Google Developers Web Fundamentals - [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/)
-    * Google Developers Web Fundamentals - [Making Fullscreen Experiences](https://developers.google.com/web/fundamentals/native-hardware/fullscreen/)
-    * Breaking the Mobile Web - [Home screen web apps for Android thanks to Chrome 31+](http://www.mobilexweb.com/blog/home-screen-web-apps-android-chrome-31)
+Favicons / Touch Icons
+* RealFaviconGenerator - [Favicon – Why you’re doing it wrong](https://realfavicongenerator.net/blog/favicon-why-youre-doing-it-wrong/)
+* RealFaviconGenerator - [FAQ](https://realfavicongenerator.net/faq)
+* RealCSS - [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need?](https://css-tricks.com/favicon-quiz/)
+* favicon-cheat-sheet - [Obsessive cheat sheet to favicon sizes/types](https://github.com/audreyr/favicon-cheat-sheet)
+Web Apps
+* Google Developers Web Fundamentals - [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/)
+* Google Developers Web Fundamentals - [Making Fullscreen Experiences](https://developers.google.com/web/fundamentals/native-hardware/fullscreen/)
+* Breaking the Mobile Web - [Home screen web apps for Android thanks to Chrome 31+](http://www.mobilexweb.com/blog/home-screen-web-apps-android-chrome-31)
