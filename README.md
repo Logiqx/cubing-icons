@@ -384,6 +384,7 @@ Favicons / Touch Icons
 * RealFaviconGenerator - [FAQ](https://realfavicongenerator.net/faq)
 * RealCSS - [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need?](https://css-tricks.com/favicon-quiz/)
 * favicon-cheat-sheet - [Obsessive cheat sheet to favicon sizes/types](https://github.com/audreyr/favicon-cheat-sheet)
+
 Web Apps
 * Google Developers Web Fundamentals - [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/)
 * Google Developers Web Fundamentals - [Making Fullscreen Experiences](https://developers.google.com/web/fundamentals/native-hardware/fullscreen/)
