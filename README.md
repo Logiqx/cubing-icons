@@ -380,11 +380,11 @@ You can also include some additional markup for Android Chrome M31 to M38, descr
 
 ### References
 * Favicons / Touch Icons
- * RealFaviconGenerator - [Favicon – Why you’re doing it wrong](https://realfavicongenerator.net/blog/favicon-why-youre-doing-it-wrong/)
- * RealFaviconGenerator - [FAQ](https://realfavicongenerator.net/faq)
- * RealCSS - [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need?](https://css-tricks.com/favicon-quiz/)
- * favicon-cheat-sheet - [Obsessive cheat sheet to favicon sizes/types](https://github.com/audreyr/favicon-cheat-sheet)
+ ** RealFaviconGenerator - [Favicon – Why you’re doing it wrong](https://realfavicongenerator.net/blog/favicon-why-youre-doing-it-wrong/)
+ ** RealFaviconGenerator - [FAQ](https://realfavicongenerator.net/faq)
+ ** RealCSS - [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need?](https://css-tricks.com/favicon-quiz/)
+ ** favicon-cheat-sheet - [Obsessive cheat sheet to favicon sizes/types](https://github.com/audreyr/favicon-cheat-sheet)
 * Web Apps
- * Google Developers Web Fundamentals - [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/)
- * Google Developers Web Fundamentals - [Making Fullscreen Experiences](https://developers.google.com/web/fundamentals/native-hardware/fullscreen/)
- * Breaking the Mobile Web - [Home screen web apps for Android thanks to Chrome 31+](http://www.mobilexweb.com/blog/home-screen-web-apps-android-chrome-31)
+ ** Google Developers Web Fundamentals - [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/)
+ ** Google Developers Web Fundamentals - [Making Fullscreen Experiences](https://developers.google.com/web/fundamentals/native-hardware/fullscreen/)
+ ** Breaking the Mobile Web - [Home screen web apps for Android thanks to Chrome 31+](http://www.mobilexweb.com/blog/home-screen-web-apps-android-chrome-31)
