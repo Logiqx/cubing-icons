@@ -70,14 +70,6 @@ convert -background white visualcube/master-colour.svg -trim -resize 162x162 -gr
 
 The "android" folder contains all of the images used by Android Chrome, referenced by the Web App manifest.
 
-The 192x192 image is the only icon included in the \<head> section of the HTML:
-
-```xml
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-```
-
-Note: 192 is a common factor of 16, 24, 32, 48, 64 and 96 so it can easily be scaled when a smaller icon is required.
-
 The Android images are primarily used for launcher icons and splash screens. This package includes images for all of the standard pixel densities documented for Android.
 
 Launcher Icon for Web App:
@@ -176,19 +168,19 @@ A theme colour can also be specified as follows:
 ```
 
 ### Commands
-All of the Android images were generated with transparent backgrounds and filling the canvas:
+All of the Android images were generated with transparent backgrounds and the border recommended on Material Design:
 
 ```bash
-convert -background transparent visualcube/master-colour.svg -trim -resize 36x36 -gravity center -extent 36x36 android/android-chrome-36x36.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 48x48 -gravity center -extent 48x48 android/android-chrome-48x48.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 72x72 -gravity center -extent 72x72 android/android-chrome-72x72.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 96x96 -gravity center -extent 96x96 android/android-chrome-96x96.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 128x128 -gravity center -extent 128x128 android/android-chrome-128x128.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 144x144 -gravity center -extent 144x144 android/android-chrome-144x144.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 192x192 -gravity center -extent 192x192 android/android-chrome-192x192.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 256x256 -gravity center -extent 256x256 android/android-chrome-256x256.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 384x384 -gravity center -extent 384x384 android/android-chrome-384x384.png
-convert -background transparent visualcube/master-colour.svg -trim -resize 512x512 -gravity center -extent 512x512 android/android-chrome-512x512.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 32x32 -gravity center -extent 36x36 android/android-chrome-36x36.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 44x44 -gravity center -extent 48x48 android/android-chrome-48x48.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 66x66 -gravity center -extent 72x72 android/android-chrome-72x72.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 88x88 -gravity center -extent 96x96 android/android-chrome-96x96.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 118x118 -gravity center -extent 128x128 android/android-chrome-128x128.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 132x132 -gravity center -extent 144x144 android/android-chrome-144x144.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 176x176 -gravity center -extent 192x192 android/android-chrome-192x192.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 234x234 -gravity center -extent 256x256 android/android-chrome-256x256.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 352x352 -gravity center -extent 384x384 android/android-chrome-384x384.png
+convert -background transparent visualcube/master-colour.svg -trim -resize 470x470 -gravity center -extent 512x512 android/android-chrome-512x512.png
 optipng -o7 -zm1-9 android/*.png
 ```
 
@@ -200,6 +192,7 @@ optipng -o7 -zm1-9 android/*.png
 * Google Developers Updates - [Adding a Splash Screen](https://developers.google.com/web/updates/2015/10/splashscreen)
 * Google Developers Updates - [Support for theme-color in Chrome 39 for Android](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
 * MDN - [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+* Material Design - [Style - Icons](https://material.io/guidelines/style/icons.html)
 
 
 ## Apple iOS
@@ -281,7 +274,7 @@ Remote desktop environments prefer 256 colour images but this favicon includes 3
 Modern browsers are better off with a high resolution PNG rather than the ICO so you can use the following in the HTML:
 
 ```xml
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 ```
 
 Note: 192 is a common factor of 16, 24, 32, 48, 64 and 96 so it can easily be scaled when a smaller icon is required.
@@ -291,6 +284,7 @@ The classic favicon was created using [ImageMagick](https://www.imagemagick.org/
 
 ```bash
 convert -background transparent master/svg-colour.svg -trim -resize 576x576 -gravity center -extent 576x576 -define icon:auto-resize=48,32,16 classic/favicon.ico
+convert -background transparent visualcube/master-colour.svg -trim -resize 192x192 -gravity center -extent 192x192 classic/favicon-192x192.png
 ```
 
 ### References
